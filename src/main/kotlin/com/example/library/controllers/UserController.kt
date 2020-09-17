@@ -13,7 +13,6 @@ class UserController {
     @Autowired
     lateinit var userRepository: UserRepository
 
-
     @GetMapping
     fun getListUsers(): List<User> = userRepository.findAll()
 

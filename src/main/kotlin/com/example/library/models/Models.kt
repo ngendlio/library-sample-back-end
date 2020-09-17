@@ -1,14 +1,11 @@
 package com.example.library.models
 
-import com.example.library.models.BaseModel
 import java.util.*
-import javax.persistence.Column
 import javax.persistence.Entity
 import javax.validation.constraints.NotBlank
-import javax.validation.constraints.NotNull
 
 @Entity
-class User(
+data class User(
         @NotBlank val firstName: String,
         @NotBlank val lastName: String,
         @NotBlank val dateOfBirth: Date,
